@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+:root {
+    --color-1: #ff007b;
+    --color-2: #0092ff;
+    --color-3: #000000;
+    --color-4: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Salsa', cursive;
 }
 
 header .header-1 {
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: var(--color-3);
     padding: 9px;
     justify-content: space-between;
+    
 }
 
 header .header-1 .social-icons{
@@ -22,11 +34,12 @@ header .header-1 .social-icons{
 }
 
 header .header-1 .social-icons a{
-    color: white;
+    color: var(--color-4);
+    padding-left: 4px;
 }
 
 header .header-1 .social-icons a:hover{
-    color: #ff007b;
+    color: var(--color-1);
 }
 
 header .header-1 .text{
@@ -34,11 +47,11 @@ header .header-1 .text{
 }
 
 header .header-1 .text .span-1{
-    background-color: #ff007b;
+    background-color: var(--color-1);
 }
 
 header .header-1 .text .span-2:hover{
-    color: #ff007b;
+    color: var(--color-1);
     cursor: pointer;
 }
 
@@ -53,16 +66,52 @@ header .header-1 hr {
     height: 1.5em;
     width: 2px;
     margin: 0 0.5rem;
-    background-color: white;
+    background-color: var(--color-4);
     opacity: .2;
 }
 
 header .header-1 .contact a{
-    color: white;
+    color: var(--color-4);
     text-decoration: none;
     padding-left: 5px;
 }
 
-header .header-1 .contact a:hover{
-    color: #ff007b;
+header .header-1 .contact i{
+    padding-left: 5px;
+}
+
+header .header-1 .contact img{
+    width: 20px;
+    margin-bottom: -5px;
+}
+
+header .header-1 .contact i{
+    padding-right: 5px;
+}
+
+header .header-1 .contact a:hover, header .header-1 .contact i:hover{
+    color: var(--color-1);
+}
+
+header .header-1 .contact .dropdwon_menu {
+    display: none;
+}
+
+header .header-1 .contact a:hover, header .header-1 .contact i:hover header .header-1 .contact .dropdwon_menu {
+    display: block;
+    position: absolute;
+    background-color: var(--color-1);
+}
+
+header .header-1 .contact .dropdwon_menu ul li:hover {
+    background-color: var(--color-2);
+}
+
+header .header-1 .contact .dropdwon_menu ul {
+    display: block;
+}
+
+header .header-1 .contact .dropdwon_menu ul li {
+    width: 120px;
+    padding: 10px;
 }
