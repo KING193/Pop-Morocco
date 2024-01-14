@@ -100,18 +100,6 @@ header .header-1 .contact .dropdwon_menu {
 header .header-1 .contact a:hover, header .header-1 .contact i:hover header .header-1 .contact .dropdwon_menu {
     display: block;
     position: absolute;
+    left: 0;
     background-color: var(--color-1);
-}
-
-header .header-1 .contact .dropdwon_menu ul li:hover {
-    background-color: var(--color-2);
-}
-
-header .header-1 .contact .dropdwon_menu ul {
-    display: block;
-}
-
-header .header-1 .contact .dropdwon_menu ul li {
-    width: 120px;
-    padding: 10px;
 }
