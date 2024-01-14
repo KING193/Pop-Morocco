@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.nav{
+  color: white;
+}
+
 .div2,
 .strong-envo {
   position: absolute;
@@ -356,6 +360,7 @@
   height: 14px;
 }
 .navigation {
+  color: white;
   position: absolute;
   width: 100%;
   top: 146px;
