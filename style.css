@@ -13,10 +13,12 @@ header .header-1 {
     justify-content: center;
     background-color: black;
     padding: 9px;
+    justify-content: space-between;
 }
 
 header .header-1 .social-icons{
-    font-size: 1.5em;
+    font-size: 1.14em;
+    margin-left: 50px;
 }
 
 header .header-1 .social-icons a{
@@ -24,9 +26,43 @@ header .header-1 .social-icons a{
 }
 
 header .header-1 .social-icons a:hover{
+    color: #ff007b;
+}
+
+header .header-1 .text{
     color: white;
 }
 
-header .header-1 .text{}
+header .header-1 .text .span-1{
+    background-color: #ff007b;
+}
 
-header .header-1 .contact{}
+header .header-1 .text .span-2:hover{
+    color: #ff007b;
+    cursor: pointer;
+}
+
+header .header-1 .contact{
+    margin-right: 50px;
+}
+
+header .header-1 hr {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 2px;
+    margin: 0 0.5rem;
+    background-color: white;
+    opacity: .2;
+}
+
+header .header-1 .contact a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+header .header-1 .contact a:hover{
+    color: #ff007b;
+}
